@@ -97,7 +97,14 @@ useEffect(() => {
 initial={{ scale: 0, opacity: 0 }}
   animate={{ scale: 1, opacity: 1 }}
   transition={{ delay: 0.8, duration: 0.4, ease: "easeOut" }}
-className="absolute -bottom-36 -right-24 p-4 cursor-pointer group">
+className="absolute -bottom-36 -right-24 p-4 cursor-pointer group"
+onClick={() => {
+    const contactSection = document.getElementById("contact");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  }}
+>
   <div className="relative w-[200px] h-[200px]">
     {/* CircularText */}
     <CircularText
@@ -177,7 +184,13 @@ className="mt-6 py-6 text-center text-3xl md:text-4xl font-extrabold md:flex md:
        initial={{scale: 0,y:40, opacity:0}}
       animate={{scale: 1,y: 0, opacity:1}}
       transition={{delay:2.1, duration: 0.4, ease: "easeOut" }}
-      className="bg-white z-100 text-black px-6 py-3 rounded-full hover:bg-gray-300 hover:scale-125 transform transition-all font-medium">
+      className="bg-white z-100 text-black px-6 py-3 rounded-full hover:bg-gray-300 hover:scale-125 transform transition-all font-medium"
+      onClick={() => {
+    const contactSection = document.getElementById("developer");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  }}>
         Khám phá
       </motion.button>
     </section>

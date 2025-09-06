@@ -34,13 +34,13 @@ const Project2 = () => {
 
       {/* Title & Info */}
       <div className="mt-6 flex justify-between items-center">
-        <h1 className="text-2xl font-bold">Hệ thống đặt vé sự kiện</h1>
+        <h1 className="text-2xl font-bold">Website Bán Nội Thất</h1>
         <div className="flex gap-2">
           <span className="bg-gray-700 text-gray-300 px-3 py-1 rounded-full text-sm">
-            Hiện tại - 2024
+            1/2025 - 4/2025
           </span>
           <span className="bg-orange-500 text-white px-3 py-1 rounded-full text-sm">
-            LizAI Vietnam
+            Đồ Án Tốt Nghiệp
           </span>
         </div>
       </div>
@@ -48,32 +48,17 @@ const Project2 = () => {
       {/* Responsibilities */}
       <div className="mt-6">
         <h2 className="text-lg font-semibold mb-4">:Key Responsibilities</h2>
-        <ul className="space-y-2 text-sm">
-          <li>
-            • Thiết kế và triển khai hệ thống đặt vé sử dụng Java và Spring boot
-          </li>
-          <li>
-            • Tự động hóa quy trình build, test và deployment cho nhiều dự án
-          </li>
-          <li>
-            • Áp dụng kiến trúc hệ thống phân tán thông qua mô hình
-            microservices
-          </li>
-          <li>
-            • Tích hợp SonarQube và Jacoco vào dự án để đảm bảo chất lượng code
-            và test
-          </li>
-          <li>
-            • Xây dựng hệ thống giám sát toàn diện với Grafana và Prometheus
-          </li>
-          <li>
-            • Triển khai hệ thống logging tập trung sử dụng Loki và Promtail
-          </li>
-          <li>
-            • Tạo dashboard trực quan cho việc theo dõi metrics và cảnh báo phục
-            sự cố
-          </li>
-        </ul>
+        <ul className="space-y-2 text-sm list-disc pl-4">
+  <li>Phát triển và triển khai nền tảng thương mại điện tử sử dụng <strong>ReactJS</strong> và <strong>TailwindCSS</strong> cho giao diện người dùng, kết hợp <strong>Node.js</strong>, <strong>Express.js</strong> và <strong>MongoDB</strong> cho hệ thống backend.</li>
+  <li>Tích hợp cổng thanh toán <strong>ví điện tử MoMo</strong> để xử lý giao dịch trực tuyến an toàn và tiện lợi.</li>
+  <li>Triển khai tính năng <strong>chat thời gian thực</strong> nhằm tăng cường tương tác giữa người dùng và quản trị viên, cải thiện chất lượng hỗ trợ khách hàng.</li>
+  <li>Xây dựng hệ thống <strong>xác thực người dùng</strong> sử dụng <strong>bcrypt</strong> để mã hóa mật khẩu và <strong>JWT</strong> để quản lý phiên đăng nhập an toàn, tuân thủ tiêu chuẩn bảo mật hiện hành.</li>
+  <li>Triển khai thành công ứng dụng với <strong>frontend</strong> được host trên <strong>Vercel</strong> và <strong>backend</strong> trên <strong>Render</strong>, đảm bảo hệ thống luôn sẵn sàng hoạt động tại:  
+    <a href="https://moho-ec.vercel.app" target="_blank" className="text-blue-500 underline">https://moho-ec.vercel.app</a>
+  </li>
+</ul>
+
+        
       </div>
     </motion.div>
   );

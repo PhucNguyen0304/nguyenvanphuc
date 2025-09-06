@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-
+import avatar from "../Repository/avatar.jfif"
 const Navbar = () => {
   return (
     <motion.nav
@@ -10,14 +10,19 @@ const Navbar = () => {
     >
       <div
         className="mt-8 rounded-lg border border-white/20 bg-black/0 backdrop-blur-md shadow-lg mx-auto flex items-center justify-between py-4 px-6 
-  w-[95%] sm:w-[80%] lg:w-[40%] transition-all duration-300"
+  w-[95%] sm:w-[80%] lg:w-[45%] transition-all duration-300"
       >
         {/* Logo + Domain */}
         <div
           className="flex items-center gap-2 cursor-pointer"
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         >
-          <div className="w-8 h-8 rounded-full bg-white" />
+          <img
+            src={avatar}
+            alt="Avatar"
+            className="w-8 h-8 rounded-full object-cover"
+          />
+
           <span className="text-lg font-bold hover:scale-105 duration-75">
             Nguyễn Văn Phúc
           </span>
@@ -27,7 +32,7 @@ const Navbar = () => {
         <ul className="flex gap-6">
           {[
             { label: "About me", target: "about" },
-            { label: "Developer", target: "developer" },
+            { label: "Skills", target: "developer" },
             { label: "Projects", target: "projects" },
             { label: "Contact", target: "contact" },
           ].map(({ label, target }) => (
